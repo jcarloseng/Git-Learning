@@ -4,7 +4,7 @@
 
     $ git init
 
-Comando utilizado para criar um repositório (sera criada uma pasta "_.git_" na pasta do projeto).
+Comando utilizado para criar um repositório (sera criada uma pasta _/.git_ na pasta do projeto).
 
     $ git status
 
@@ -16,11 +16,11 @@ Comando utilizado para adicionar novos arquivos (ou novas versões de arquivos e
 
     $ git commit -m "<type-any-message-here>"
 
-Esse comando 'comitará' os arquivos que estarão na _staging area_, ou seja, enviará os mesmos para o repositório _git_. nesse comando você deverá incluir uma breve mensagem mencionando as alterações que você realizou no aqruivo.
+Esse comando 'comitará' os arquivos que estarão na _staging area_, ou seja, enviará os mesmos para o repositório _git_. Nesse comando você deverá incluir uma breve mensagem mencionando as alterações que você realizou no aqruivo.
 
     $ git add '*txt'
 
-Esse comando será útil para adicionar vários arquivos com a mesma extensão _.txt_ para a _stanging area_ de uma só vez. eles estarão prontos para serem comitados futuramente.
+Esse comando será útil para adicionar vários arquivos com a mesma extensão _.txt_ para a _stanging area_ de uma só vez. Eles estarão prontos para serem comitados futuramente.
 
     $ git log
 
@@ -28,7 +28,7 @@ Esse comando mostra uma espécie de histórico de todos os _commits_ realizados.
 
     $ git remote add <remote-name> <repository-Url>
 
-Esse comando adiciona um repositório remoto (nesse caso, o [_github_](https://github.com/)) para que o repositório local seja enviado. o \<_remote-name_\> padrão é o _origin_. 
+Esse comando adiciona um repositório remoto (nesse caso, o [_github_](https://github.com/)) para que o repositório local seja enviado. O \<_remote-name_\> padrão é o _origin_. 
 
     $ git push -u <remote-name> <branch-name>
 
@@ -68,7 +68,7 @@ Comando responsável por mudar o _branch_ atual (em uso) para o informado  em _\
 
     $ git checkout -b <new_branch>
 
-Esse comando desempenha a mesma função dos dois últimos comandos citados anteriomente, ou seja, ele cria o _\<new_branch\>_ e já coloca esse _branch_ criado como o _branch_ atual [_checkout_].
+Esse comando desempenha a mesma função dos dois últimos comandos citados anteriomente, ou seja, ele cria o _\<new_branch\>_ e já coloca esse _branch_ criado como o _branch_ atual.
 
     $ git rm '*.txt'
 
