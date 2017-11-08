@@ -1,92 +1,87 @@
-COMANDOS APRENDIDOS NO CURSO 'TRY GIT' (CODE SCHOOL)
+# COMANDOS APRENDIDOS NO CURSO [__TRY GIT__](https://try.github.io/)
 
-Comandos Git (no Linux):
+### - Comandos Git (para Linux):
 
-- git init
+    $ git init
 
-> Comando utilizado para criar um repositório (sera criada uma pasta ".git" na pasta do projeto)
+Comando utilizado para criar um repositório (sera criada uma pasta "_.git_" na pasta do projeto).
 
-- git status
+    $ git status
 
-> Verifica o status do repositório git, mostrando informações relevantes como: se há algum arquivo a ser comitado, etc.
+Verifica o status do repositório _git_, mostrando informações relevantes como: se há algum arquivo a ser comitado, etc.
 
-- git add <file-name>
+    $ git add <file-name>
 
->  Comando utilizado para adicionar novos arquivos (ou novas versões de arquivos existentes) para serem comitados no git (staging area). Esses arquivos ainda não estão no repositório, eles estarão agurdando um comando de commit para serem enviados para lá.
+Comando utilizado para adicionar novos arquivos (ou novas versões de arquivos existentes) para serem comitados no _git_ (_staging area_). Esses arquivos ainda não estão no repositório, eles estarão agurdando um comando de _commit_ para serem enviados para lá.
 
-- git commit -m "<type-any-message-here>"
+    $ git commit -m "<type-any-message-here>"
 
-> Esse comando 'comitará' os arquivos que estarão na staging area, ou seja, enviará os mesmos para o repositório git. nesse comando você deverá incluir uma breve mensagem mencionando as alterações que você realizou no aqruivo.
+Esse comando 'comitará' os arquivos que estarão na _staging area_, ou seja, enviará os mesmos para o repositório _git_. nesse comando você deverá incluir uma breve mensagem mencionando as alterações que você realizou no aqruivo.
 
-- git add '*txt'
+    $ git add '*txt'
 
-> Esse comando será útil para adicionar vários arquivos com a mesma extensão (.txt) para a stanging area de uma só vez. eles estarão prontos para serem comitados futuramente.
+Esse comando será útil para adicionar vários arquivos com a mesma extensão _.txt_ para a _stanging area_ de uma só vez. eles estarão prontos para serem comitados futuramente.
 
-- git log
+    $ git log
 
-> Esse comando mostra uma espécie de histórico de todos os comitts realizados. Eles estarão organizados por ordem de comitt (do mais atual até o mais antigo), cada um com sua respectiva mensagem (descrição da alteração).
+Esse comando mostra uma espécie de histórico de todos os _commits_ realizados. Eles estarão organizados por ordem de _commit_ (do mais atual até o mais antigo), cada um com sua respectiva mensagem (descrição da alteração).
 
-- git remote add <remote-name> <repository-Url>
+    $ git remote add <remote-name> <repository-Url>
 
-> Esse comando adiciona um repositorio remoto (nesse caso, o github) para que o repositório local seja enviado. o "remote-name" padrão utilizado é o "origin". 
+Esse comando adiciona um repositório remoto (nesse caso, o [_github_](https://github.com/)) para que o repositório local seja enviado. o \<_remote-name_\> padrão é o _origin_. 
 
-- git push -u <remote-name> <branch-name>
+    $ git push -u <remote-name> <branch-name>
 
-> Esse comando diz ao git para onde os commits serão enviados quando o repositório estiver pronto para envio. Nesse caso será enviado para um repositório remoto (no Github). Como já informado anteriormente, por padrão o Remote Name é 'origin'. O nome padrão do branch local é 'master'. o comando '-u' será responsável pela memorização daquele comando específico, ou seja, se o comando enviado inicialmente for 'git push -u origin master', nas próximas vezes só será necessário digitar 'git push', pois o '-u' informado fará com que o git retome ao comando completo anteriormente digitado.
+Esse comando diz ao _git_ para onde os _commits_ serão enviados quando o repositório estiver pronto para envio. Nesse caso será enviado para um repositório remoto. Como já informado anteriormente, por padrão o \<_remote-name_\> é _origin_. O nome padrão do _branch_ local é _master_. O comando __-u__ será responsável pela memorização daquele comando específico, ou seja, se o comando enviado inicialmente for **_git push -u origin master_**, nas próximas vezes só será necessário digitar **_git push_**, pois o **-u** informado fará com que o _git_ retome ao comando completo anteriormente digitado.
 
-- git pull origin master
+    $ git pull origin master
 
-> Esse comando é responsável por 'puxar' alterações feitas no repositório remoto para o repositório local. Comando utilizado por exemplo quando novas pessoas são convidadas para participarem da elaboração de um projeto. Esses usuário usarão o comando 'git pull' para pegar esse arquivos, fazer suas alterações e depois usar o comando 'git push' para enviar as mudanças para o repositório remoto. Já é sabido que 'origin' é o remote name e 'master' é o branch name.
+Esse comando é responsável por "puxar" alterações feitas no repositório remoto para o repositório local. Comando utilizado por exemplo quando novas pessoas são convidadas para participarem da elaboração de um projeto. Esses usuários usarão o comando **_git pull_** para pegar esse arquivos, fazerem suas alterações e depois usar o comando **_git push_** para enviar as mudanças para o repositório remoto. Já é sabido que **_origin_** é o _remote name_ e **_master_** é o _branch name_.
 
-- git diff HEAD
+    $ git diff HEAD
 
-> Comando resposável por mostrar as diferenças entre o repositório atual e a situação do mesmo no último commit. Por exemplo, caso seja realizado uma adição de novas alterações no repositório através do comando 'pull', a diferença entre essas novas alterações e o estado do ultimo commit será vista através do comando 'diff'. 'HEAD' é utilizado para fazer menção ao ponto do repositório no ultimo commit
+Comando resposável por mostrar as diferenças entre o repositório atual e a situação do mesmo no último _commit_. Por exemplo, caso seja realizado uma adição de novas alterações no repositório através do comando _pull_, a diferença entre essas novas alterações e o estado do último _commit_ será vista através do comando _diff_. **_HEAD_** é utilizado para fazer menção ao ponto do repositório no último _commit_.
 
-- git diff --staged
+    $ git diff --staged
 
-> Outra maneira de ver as diferenças, desta vez mostrando as alterações que foram feitas dentro do arquivo. Esse referido arquivo deverá ter sido adicionado na staging area.
+Outra maneira de ver as diferenças, desta vez mostrando as alterações que foram feitas dentro do arquivo. Esse referido arquivo deverá ter sido adicionado na _staging area_.
 
-- git reset <file-name>
+    $ git reset <file-name>
 
-> Esse comando remove um arquivo da staging area. Desta forma esse referido arquivo não estará mais na lista de arquivos que estarão prontos para o commit.
+Esse comando remove um arquivo da _staging area_. Desta forma esse referido arquivo não estará mais na lista de arquivos que estarão prontos para o _commit_.
 
-- git checkout -- <target>
+    $ git checkout -- <target>
 
-> Com esse comando o git desfaz todas as mudanças realizadas no repositório desde o último commit do arquivo mencionado em 'target'. Por exemplo, 'git checkout -- readme.txt' esse comando irá desfazer todas as mudanças realizadas no repositório desde o último commit do arquivo 'readme.txt'.
+Com esse comando o _git_ desfaz todas as mudanças realizadas no repositório desde o último _commit_ do arquivo mencionado em _\<target\>_. Por exemplo **_git checkout -- readme.txt_** , esse comando irá desfazer todas as mudanças realizadas no repositório desde o último _commit_ do arquivo _'readme.txt'_.
 
-- git branch
+    $ git branch
 
-> Comando usado para ver os branchs existentes. O branch que possui um asterisco do lado é o seu branch atual (em uso).
+Comando usado para ver os _branchs_ existentes. O _branch_ que possui um asterisco do lado é o seu _branch_ atual (em uso).
 
-- git branch <branch-name>
+    $ git branch <branch-name>
 
-> Esse comando cria um novo branch (ramo) com o nome a ser inserido no espaço "<branch-name>". Com isso é possível ter varios trabalhos no reposítorio de forma simultânea sem afetar o arquivo principal (do branch master).
+Esse comando cria um novo _branch_ com o nome a ser inserido em _\<branch-name\>_. Com isso é possível ter vários trabalhos no reposítorio de forma simultânea sem afetar o arquivo principal (do _branch master_).
 
-- git checkout <branch-name>
+    $ git checkout <branch-name>
 
-> Comando responsável por mudar o branch atual (em uso) para o "branch-name". Por exemplo se o usuário estiver no branch master, com o comando "git checkout NewBranch" ele passará a estar no NewBranch.
+Comando responsável por mudar o _branch_ atual (em uso) para o informado  em _\<branch-name\>_. Por exemplo, se o usuário estiver no _branch master_, com o comando **_git checkout NewBranch_** ele passará a estar no _NewBranch_.
 
-- git checkout -b <new_branch>
+    $ git checkout -b <new_branch>
 
-> Esse comando desempenha a mesma função dos dois ultimos comandos citados acima, ou seja, ele cria o "new_branch" e já coloca esse branch criado como o branch atual [checkout].
+Esse comando desempenha a mesma função dos dois últimos comandos citados anteriomente, ou seja, ele cria o _\<new_branch\>_ e já coloca esse _branch_ criado como o _branch_ atual [_checkout_].
 
-- git rm '*.txt'
+    $ git rm '*.txt'
 
-> Esse comando remove todos os arquivos com a extensão ".txt" do repositório. Ele também remove esses arquivos da staging area, caso eles estejam lá.
+Esse comando remove (apaga) todos os arquivos com a extensão _.txt_ do repositório. Ele também remove esses arquivos da _staging area_, caso eles estejam lá.
 
-- git merge <branch-name>
+    $ git merge <branch-name>
 
-> Esse comando mescla o conteúdo do "branch-name" para o branch atual. Dessa forma se o usuário está atualmente no branch master e deseja mesclar as mudanças feitas no "NewBranch" para o master, então ele deverá digitar "git merge NewBranch". Dessa forma as mudanças feitas em NewBranch serão passadas para o branch master.
+Esse comando mescla o conteúdo do _\<branch-name\>_ para o _branch_ atual. Dessa forma se o usuário está atualmente no _branch master_ e deseja mesclar as mudanças feitas em _Newbranch_ para o _master_, então ele deverá digitar **_git merge Newbranch_**. Dessa forma as mudanças feitas em Newbranch serão passadas para o _branch master_.
 
-- git branch -d <branch-name>
+    $ git branch -d <branch-name>
 
-> Comando utilizado para deletar um branch. Por exemplo, caso o usuário queira deletar um branch chamado 'NewBranch', então o comando será "git branch -d NewBranch". Esse comando só funcionará se NewBranch já tiver sido mesclado.
+Comando utilizado para deletar um _branch_. Por exemplo, caso o usuário queira deletar um _branch_ chamado _Newbranch_, então o comando será **_git branch -d Newbranch_**. Esse comando só funcionará se _Newbranch_ já tiver sido mesclado (_merge_).
 
-- git branch -D <branch-name>
+    $ git branch -D <branch-name>
 
-> Esse comando forçara que um branch que não tiver sido mesclado ainda seja excluido. O recurso '-D' é uma junção dos recursos '-d -f', sendo o último referente ao recurso '--force'.
-
-
-
-
-
+Esse comando forçará que um _branch_ que não tiver sido mesclado ainda seja excluído. O recurso __-D__ é uma junção dos recursos __-d -f__, sendo o último referente ao recurso __--force__.
